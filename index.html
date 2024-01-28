@@ -6,9 +6,52 @@
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
-    
+    <main class="main-container">
+        <div class="side-image">
+            <div class="logo-container">
+                <img class="odin-logo" src="./images/odin-lined.png" alt="odin-logo">
+                <div class="odin-text">Odin</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="quote">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span>now</span> to get started.</p>
+                <p>You <span>know</span> you want to.</p>
+            </div>
+            <div class="form">
+                <h1>Let's do this!</h1>
+                <form action="" method="post">
+                    <div class="left-form">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" pattern="[a-zA-Z]+" autofocus >
+
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" placeholder="hotstuff54@gmail.com">
+
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" class="match">
+                        <span class="noMatch">* Passwords do not match</span>
+                    </div>
+                    <div class="right-form">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" pattern="[a-zA-Z]+">
+
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-456-7890">
+
+                        <label for="confirm-password"> CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" class="match">
+                    </div>
+                </form>
+            </div>
+            <div class="create-account">
+                <button id="submitBtn" type="submit">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

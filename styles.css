@@ -1,0 +1,184 @@
+@font-face {
+    font-family: norse-bold;
+    src: url('./fonts/Norse-Bold.otf');
+}
+
+:root {
+    --test-border: 1px solid black;
+    --buttonClr: #596D48;
+    --buttonClrHover: #728b5c;
+    --contentBg: rgb(244, 243, 243);
+    --siteFont: Arial, Helvetica, sans-serif;
+}
+
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.odin-text {
+    font-family: 'norse-bold', sans-serif;
+    color: white;
+    font-size: 5rem;
+}
+
+.logo-container {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.525);
+    display: flex;
+    justify-content: center;
+}
+
+.odin-text{
+    display: flex;
+    align-items: center;
+}
+
+.side-image {
+    position: relative;
+    width: 40%;
+    height: 100vh;
+    background-image: url('./images/greenery.avif');
+    background-size: cover; 
+}
+
+.main-container {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 60%;
+}
+
+.content > div {
+    flex: 1 0;
+}
+
+.odin-logo {
+    width: 25%;
+}
+
+.quote {
+    padding: 0 50px;
+}
+
+.quote > p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.quote > p:first-child {
+    margin: 150px 0 20px 0;
+}
+
+.quote,
+.create-account {
+    background: var(--contentBg);
+}
+
+p span {
+    font-style: italic;
+}
+
+.create-account {
+    padding-top: 30px;
+    padding-left: 50px;
+    box-shadow: inset 0 20px 20px -20px rgba(121, 121, 121, 0.8);
+}
+
+.create-account > p {
+    font-weight: 300;
+}
+
+button {
+    background: var(--buttonClr);
+    color: white;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgb(197, 197, 197);
+    border: none;
+}
+
+button:hover {
+    background: var(--buttonClrHover);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+a:link,
+a:visited {
+    color: var(--buttonClr);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    height: 80%;
+}
+
+.left-form,
+.right-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding: 0 0 0 50px;
+    justify-content: center;
+}
+
+input {
+    margin-bottom: 40px;
+    width: 80%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    border: 1px solid rgb(83, 83, 255);
+    outline: none;
+    box-shadow: 3px 3px rgb(227, 227, 227);
+}
+
+label {
+    font-size: .75rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.noMatch {
+    position: absolute;
+    display: none;
+    color: red;
+    font-size: .7rem;
+    top: 270px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px 50px;
+    height: 10%;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
